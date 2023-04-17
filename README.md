@@ -1,7 +1,9 @@
 # Microservice Architecture
 
 A demo ecommerces app running on mono repo microservices architectures which consist of customer, product and shopping service communicating through express http proxy
-## Prerequisites    
+
+## Prerequisites
+
     Make sure you have the following installed on your machine
     - nodejs
 
@@ -21,14 +23,14 @@ Utilized callback functions in the server to try and build a modular and scalabl
 
 1. Clone repo
 1. Set up environment variables for each service
-    ```
-    cp .env.example .env
-    ```
+   ```
+   cp .env.example .env
+   ```
 1. run `npm intall` for each service
 
 ## Usage:
 
 1. run `npm run dev` to start each services locally
-1. Navigate to product service `localhost:8000`
+1. Navigate to gateway service `localhost:8000` will be redirected to product service
 1. Navigate to customer service `localhost:8000/customer`
 1. Navigate to shopping service `localhost:8000/shopping`
